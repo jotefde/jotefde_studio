@@ -1,0 +1,218 @@
+/* 
+    Created on : 2017-11-04, 20:37:59
+    Author     : Jakub Frydryk
+*/
+
+.Jotefde_Logo {
+    font-family: 'MainFont';
+    font-weight: bold;
+    font-size: 400px;
+    
+    .bottom_border {
+        stroke: #b0a98a;
+        stroke-width: 5px;
+        transition: transform 0.5s;
+        transform: scaleX(0) translateY(-100px);
+        -webkit-filter: none !important; 
+            filter: none !important;
+        animation-name: jotefde-step-5-4;
+        animation-duration: 1s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    }
+    
+    &:hover {
+        cursor: pointer;
+        .studio_span, .jotefde_group-outter {
+        -webkit-filter: drop-shadow( 0 0 5px #000 ); 
+                filter: drop-shadow( 0 0 5px #000 );
+        }
+    }
+    
+    .studio_span {
+        opacity: 0;
+        fill:#C1272D;
+        transform: matrix(1, 0, 0, 1, 1850, 420) translate(0, 130px);
+        animation-name: jotefde-step-4-1;
+        animation-duration: 1s;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+        
+    }
+    
+    .jotefde_group-outter {
+        transform: matrix(1, 0, 0, 1, 1700, 420) translate(-550px, 130px);
+        animation-name: jotefde-step-5-1;
+        animation-duration: 1s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        
+        .jotefde_group {
+            transform: scale(0);
+            transform-origin: 400px -150px;
+            animation-name: jotefde-step-1;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+            
+            .jotefde_span {
+                transform: matrix(1, 0, 0, 1, 260, 0) translate(0, 0);
+
+                .J_char_red {
+                    font-size: 1em;
+                    opacity: 1;
+                    fill: #C1272D;
+                    animation-name: jotefde-step-4-2;
+                    animation-duration: 1s;
+                    animation-delay: 2.5s;
+                    animation-fill-mode: forwards;
+                    //transform: translateX(270px);
+                }
+
+                .J_char_black {
+                    font-size: 1em;
+                    opacity: 0;
+                    fill: black;
+                    animation-name: jotefde-step-4-3;
+                    animation-duration: 1s;
+                    animation-delay: 2.5s;
+                    animation-fill-mode: forwards;
+                    //transform: translateX(270px);
+                }
+
+                .J_expand {
+                    transform: translate(180px, -40px);
+                    fill:rgba(0,0,0,0);
+                    stroke:#000000;
+                    stroke-width:10;
+                    stroke-miterlimit:10;
+                    font-size: 0.8em;
+                    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+                    animation-name: jotefde-step-5-3;
+                    animation-duration: 1s;
+                    animation-delay: 4s;
+                    animation-fill-mode: forwards;
+                }
+            }
+
+            .brackets {
+                font-size: 1.5em;
+                transform-origin: 360px -160px;
+                transform: rotate(-90deg);
+
+                animation-name: jotefde-step-2;
+                animation-duration: 0.5s;
+                animation-delay: 1.5s;
+                animation-fill-mode: forwards;
+
+                .right-bracket-outter {
+                    transform: translateX(420px);
+                    animation-name: jotefde-step-3-1;
+                    animation-duration: 0.5s;
+                    animation-delay: 2.5s;
+                    animation-fill-mode: forwards;
+                    .right-bracket {
+                        transform: translateX(0px);
+                        animation-name: jotefde-step-5-2;
+                        animation-duration: 1s;
+                        animation-delay: 4s;
+                        animation-fill-mode: forwards;
+                    }
+                }
+                .left-bracket {
+                    animation-name: jotefde-step-3-2;
+                    animation-duration: 0.5s;
+                    animation-delay: 2.5s;
+                    animation-fill-mode: forwards;
+                    transform: translateX(-40px);
+                }
+            }
+        }
+    }
+   
+}
+
+.Jotefde_Logo-2 {
+    .jotefde_group-2 {
+        animation-name: jotefde-step-5-1;
+        animation-duration: 1s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        .right-bracket-2 {
+            animation-name: jotefde-step-5-2;
+            animation-duration: 1s;
+            animation-delay: 4s;
+            animation-fill-mode: forwards;
+        }
+        
+    }
+    
+}
+    
+
+@keyframes jotefde-step-1 {
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes jotefde-step-2 {
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes jotefde-step-3-1 {
+    to {
+        transform: translateX(380px);
+    }
+}
+
+@keyframes jotefde-step-3-2 {
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes jotefde-step-4-1 {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes jotefde-step-4-2 {
+    
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes jotefde-step-4-3 {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes jotefde-step-5-1 {
+    to {
+        transform: matrix(1, 0, 0, 1, 900, 420) translate(-550px, 130px);
+    }
+}
+
+@keyframes jotefde-step-5-2 {
+    to {
+        transform: translateX(800px);
+    }
+}
+
+@keyframes jotefde-step-5-3 {
+    to {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+@keyframes jotefde-step-5-4 {
+    to {
+        transform: scaleX(1) translateY(-100px);
+    }
+}

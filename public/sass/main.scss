@@ -1,0 +1,23 @@
+/* 
+    Created on : 2017-11-04, 15:59:59
+    Author     : Jakub Frydryk
+*/
+
+@import 'reset';
+@import 'typography';
+
+body {
+    background: url('/image/bg_pattern.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+#logo {
+    position: absolute;
+        top: 50%;
+        left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: auto;
+    box-sizing: border-box;
+}

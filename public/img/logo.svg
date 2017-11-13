@@ -1,0 +1,20 @@
+<svg version="1.1" class="Jotefde_Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3400 840" xml:space="preserve">
+<text  class="studio_span">Studio</text>
+<g class="jotefde_group-outter">
+    <g class="jotefde_group" >
+        <g class="jotefde_span">
+            <text class="J_char_red">J</text>
+            <text class="J_char_black">J</text>
+            <text class="J_expand">otefde</text>
+        </g>
+        <g class="brackets">
+            <text class="left-bracket">{</text>
+            <g class="right-bracket-outter">
+                <text class="right-bracket">}</text>   
+            </g>
+        </g>
+    </g>
+</g>
+
+<line x1="0" y1="835" x2="3400" y2="835" class="bottom_border" />
+</svg>
